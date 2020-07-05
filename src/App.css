@@ -37,6 +37,8 @@
   flex-direction: column;
   color: #ffffff;
   margin-top: 3em;
+  width: 100vw;
+  left: 50%;
 }
 .details li {
   list-style-type: none;
