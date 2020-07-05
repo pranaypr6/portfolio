@@ -1,5 +1,12 @@
 .app {
-  background: url("./assets/coding_2.svg");
+  /* background: url("./assets/coding_2.svg"); */
+  background: rgb(2, 0, 36);
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(230, 15, 186, 1) 0%,
+    rgba(157, 26, 152, 1) 100%
+  );
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -7,6 +14,7 @@
   opacity: 0.6;
   width: 100vw;
   overflow: hidden;
+  color: #ffffff;
 }
 
 .main {
@@ -15,6 +23,7 @@
   left: 0;
   height: 100vh;
   width: 100vw;
+  color: #ffffff;
 }
 
 .content {
@@ -32,12 +41,16 @@
   margin-top: 20px;
 }
 .details-link {
-  border: 2px solid #f63;
+  border: 2px solid #ffffff;
   padding: 3px 20px;
   border-radius: 20px;
   color: #ffffff;
   text-decoration: none;
   font-size: 1.6em;
+}
+
+.details-link:hover {
+  background-color: #f63;
 }
 .social-icons {
   display: flex;
@@ -46,14 +59,22 @@
   position: absolute;
   bottom: 0;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-60%, 70%);
   font-size: 1.8em;
 }
+
 .social-icons li {
   list-style-type: none;
-  margin-bottom: -1em;
-  padding-left: 1em;
+  padding-left: 0.8em;
 }
 .icon {
-  color: #f63;
+  color: #ffffff;
+}
+
+.head {
+  border-bottom: 2px solid #ffffff;
+  height: 10vh;
+  color: #ffffff;
+  text-align: start;
+  padding-left: 50px;
 }
