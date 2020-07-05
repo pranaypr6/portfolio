@@ -24,6 +24,7 @@
   height: 100vh;
   width: 100vw;
   color: #ffffff;
+  overflow: hidden;
 }
 
 .content {
@@ -77,4 +78,10 @@
   color: #ffffff;
   text-align: start;
   padding-left: 50px;
+}
+.firstPage {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 20%;
 }

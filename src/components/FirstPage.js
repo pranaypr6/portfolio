@@ -42,31 +42,48 @@ const childVariant = {
 
 const FirstPage = () => {
   return (
-    <motion.div variants={detailsDivVariant} animate="visible" initial="hidden">
-      <h1>
-        <Typed
-          strings={["Welcome! , this is", " PranayKumar, Web developer . . ."]}
-          typeSpeed={100}
+    <>
+      <div>
+        <img
+          src={require("../assets/coding.svg")}
+          alt=""
+          style={{ paddingTop: "20px" }}
         />
-      </h1>
-      <ul className="details">
-        <motion.li variants={childVariant} whileHover="hover">
-          <Link to="/about" className="details-link">
-            About me
-          </Link>
-        </motion.li>
-        <motion.li variants={childVariant} whileHover="hover">
-          <Link to="projects" className="details-link">
-            My Projects
-          </Link>
-        </motion.li>
-        <motion.li variants={childVariant} whileHover="hover">
-          <Link to="education" className="details-link">
-            Education
-          </Link>
-        </motion.li>
-      </ul>
-    </motion.div>
+      </div>
+      <motion.div
+        variants={detailsDivVariant}
+        animate="visible"
+        initial="hidden"
+        className="firstPage"
+      >
+        <h1>
+          <Typed
+            strings={[
+              "Welcome! , this is",
+              " PranayKumar, Web developer . . .",
+            ]}
+            typeSpeed={100}
+          />
+        </h1>
+        <ul className="details">
+          <motion.li variants={childVariant} whileHover="hover">
+            <Link to="/about" className="details-link">
+              About me
+            </Link>
+          </motion.li>
+          <motion.li variants={childVariant} whileHover="hover">
+            <Link to="projects" className="details-link">
+              My Projects
+            </Link>
+          </motion.li>
+          <motion.li variants={childVariant} whileHover="hover">
+            <Link to="education" className="details-link">
+              Education
+            </Link>
+          </motion.li>
+        </ul>
+      </motion.div>
+    </>
   );
 };
 
